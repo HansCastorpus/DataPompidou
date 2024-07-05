@@ -1,4 +1,4 @@
-d3.json("data/data.json", function (data) {
+d3.json("Data/data.json", function (data) {
   var width = 2500;
   var height = 4000;
 

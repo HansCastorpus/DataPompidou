@@ -26,11 +26,20 @@ body {
   }
 }
 
+/* Medium screens */
+@media (max-width: 1024px) {
+  :root {
+    --scale-factor: 0.565;
+    --left-position: 2px;
+    --top-position: 0;
+  }
+}
+
 /* Small screens */
 @media (max-width: 768px) {
   :root {
     --scale-factor: 0.4;
-    --left-position: 100px;
+    --left-position: 10px;
     --top-position: 0;
   }
 }
@@ -43,6 +52,7 @@ body {
     --top-position: 0;
   }
 }
+
 .frame {
   display: flex;
   flex-direction: column;

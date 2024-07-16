@@ -29,7 +29,7 @@ body {
 /* Medium screens */
 @media (max-width: 1024px) {
   :root {
-    --scale-factor: 0.565;
+    --scale-factor: 0.41;
     --left-position: 2px;
     --top-position: 0;
   }

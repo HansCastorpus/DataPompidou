@@ -26,15 +26,6 @@ body {
   }
 }
 
-/* Medium screens */
-@media (max-width: 1024px) {
-  :root {
-    --scale-factor: 0.765;
-    --left-position: 2px;
-    --top-position: 0;
-  }
-}
-
 /* Small screens */
 @media (max-width: 768px) {
   :root {

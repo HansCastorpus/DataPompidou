@@ -1,12 +1,4 @@
-body {
-position: absolute;
-left: 200px;
-  background-color: #231f20;
-  transform-origin: top left;
-  transform: scale(0.9);
-  width: 100%;
-  height: 100%;
-}
+0.565
 
 .frame {
   display: flex;

@@ -1,5 +1,57 @@
-0.565
+body {
+  position: absolute;
+  left: var(--left-position);
+  top: var(--top-position);
+  background-color: #231f20;
+  transform-origin: top left;
+  width: 100%;
+  height: 100%;
+  transform: scale(var(--scale-factor));
+}
 
+/* Default values for large screens */
+:root {
+  --scale-factor: 0.9;
+  --left-position: 200px;
+  --top-position: 0;
+}
+
+
+/* Medium screens */
+@media (max-width: 1440px) {
+  :root {
+    --scale-factor: 0.565;
+    --left-position: 2px;
+    --top-position: 0;
+  }
+}
+
+/* Medium screens */
+@media (max-width: 1024px) {
+  :root {
+    --scale-factor: 0.765;
+    --left-position: 2px;
+    --top-position: 0;
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  :root {
+    --scale-factor: 0.4;
+    --left-position: 100px;
+    --top-position: 0;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  :root {
+    --scale-factor: 0.3;
+    --left-position: 50px;
+    --top-position: 0;
+  }
+}
 .frame {
   display: flex;
   flex-direction: column;

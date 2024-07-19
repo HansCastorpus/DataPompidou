@@ -9,7 +9,7 @@
 } */
  body{
   transform: scale(0.9);
-
+  font-family: "Jost", sans-serif;
  }
 
 .frame {
@@ -100,6 +100,7 @@
   text-align: left;
   height: 240px;
   font: 20px sans-serif;
+  font-family: "Jost", sans-serif;
   color: antiquewhite;
   background: #231f20;
   pointer-events: none;

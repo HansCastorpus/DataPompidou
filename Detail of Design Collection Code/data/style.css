@@ -9,7 +9,7 @@
 } */
  body{
   transform: scale(0.9);
-  font-family: "Jost", sans-serif;
+
  }
 
 .frame {
@@ -47,7 +47,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #231f20;
+  background-color: #1c1d1f;
   width: 1400px;
   padding: 0;
   margin: 0;
@@ -100,9 +100,8 @@
   text-align: left;
   height: 240px;
   font: 20px sans-serif;
-  font-family: "Jost", sans-serif;
   color: antiquewhite;
-  background: #231f20;
+  background: #1c1d1f;
   pointer-events: none;
   gap: 15px;
   margin-left: -3px;
@@ -432,7 +431,7 @@ font-weight: bold;
 }
 
 ::-webkit-scrollbar-track {
-  background: #231f20;
+  background: #1c1d1f;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -449,7 +448,7 @@ font-weight: bold;
 /* Firefox */
 html {
   scrollbar-width: thin;
-  scrollbar-color: #888 #231f20;
+  scrollbar-color: #888 #1c1d1f;
   scrollbar-highlight-color: #0055ff;
 }
 

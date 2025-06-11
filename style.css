@@ -19,8 +19,8 @@ body {
 /* Medium screens */
 @media (max-width: 1920px) {
   :root {
-    --scale-factor: 0.81;
-    --left-position: 2px;
+    --scale-factor: 0.76;
+    --left-position: 60px;
     --top-position: 0;
   }
 }

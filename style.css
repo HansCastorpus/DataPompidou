@@ -20,7 +20,7 @@ body {
 @media (max-width: 1920px) {
   :root {
     --scale-factor: 0.76;
-    --left-position: 60px;
+    --left-position: 55px;
     --top-position: 0;
   }
 }

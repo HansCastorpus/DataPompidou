@@ -17,6 +17,15 @@ body {
 }
 
 /* Medium screens */
+@media (max-width: 1920px) {
+  :root {
+    --scale-factor: 0.81;
+    --left-position: 2px;
+    --top-position: 0;
+  }
+}
+
+/* Medium screens */
 @media (max-width: 1440px) {
   :root {
     --scale-factor: 0.594;

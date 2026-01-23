@@ -134,7 +134,7 @@ body {
     font-size: 29pt;
     line-height: 1.2;
     position: absolute;
-    left: 568px;
+    left: 0px;
     width: 1000px;
   }
   
@@ -162,7 +162,7 @@ body {
   
   .Carte {
     position: absolute;
-    top: 3570px;
+    top: 3300px;
     left: -114px;
     z-index: 100;
   }
@@ -175,7 +175,7 @@ body {
   
   .Designers {
     position: absolute;
-    top: 6940px;
+    top: 6350px;
     color: #e7ddcd;
     left: 61px;
   }
@@ -202,7 +202,7 @@ body {
   
   .Total {
     position: absolute;
-    top: 9755px;
+    top: 7744px;
     left: 3px;
     transform: scale(0.95);
     z-index: 1000;
@@ -211,7 +211,7 @@ body {
   .TotalDesigners {
     position: absolute;
     color: #1c1d1f;
-    top: 8411px;
+    top: 7741px;
     left: 1762px;
   }
   
@@ -306,11 +306,11 @@ body {
   .map_background {
     position: relative;
     background-color: #e7ddcd;
-    width: 2349px;
-    height: 1179px;
-    left: 8px;
-    top: 6034px;
-    display: none;
+    width: 2639px;
+    height: 1039px;
+    left: -152px;
+    top: 4054px;
+    border-radius: 50px;
   }
   
   .total_background {
@@ -318,7 +318,7 @@ body {
     background-color: #e7ddcd;
     width: 2349px;
     height: 2019px;
-    top: 6934px;
+    top: 5904px;
     left: 8px;
     border-radius: 50px;
   }
@@ -327,7 +327,7 @@ body {
     display: flex;
     flex-direction: row;
     position: fixed;
-    margin-top: -1129px;
+    margin-top: -2166px;
     width: 1425px;
     height: 148px;
     z-index: 20;

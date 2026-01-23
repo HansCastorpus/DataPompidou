@@ -1,1699 +1,1009 @@
 .graph {
-  position: relative;
-  display: flex;
-  top: 1000px;
-}
-
-#body {
-  z-index: 20;
-  position: absolute;
-  top: -100px;
-  left: -70px;
-}
-
-.script {
-  z-index: 20;
-}
-
-.DecadeBarChartContainer {
-  border: solid 0px black;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  top: -854px;
-  left: 86px;
-  width: 3204px;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 500;
-  font-size: 1.5em;
-  gap: 7px;
-}
-
-.CreationDecadeQuantity {
-  border: solid 0px black;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 12;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 1.5em;
-  left: 90px;
-  width: 3204px;
-  gap: 165px;
-  color: #635c58;
-  top: 320px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChart1 {
-  position: relative;
-  background-color: #2a2626;
-  width: 189px;
-  height: 48px;
-  transition: 0.3s;
-  left: -33px;
-}
-
-.Chart1:hover ~ .DecadeBarChart1 .DecadeBarChart1_Detail1 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_Detail1 {
-  position: absolute;
-  width: 189px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.Objet1 {
-  height: 48px;
-  background-color: #8d2438;
-}
-.Mobilier1 {
-  height: 27px;
-  background-color: #c6bca2;
-}
-.Industriel1 {
-  height: 17px;
-  background-color: #e7a02c;
-}
-.Vestimentaire1 {
-  height: 9px;
-  background-color: #1a4d8b;
-}
-.Graphique1 {
-  height: 2px;
-  background-color: #da3035;
-}
-.Technologie1 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.Architecture1 {
-  height: 0px;
-  background-color: #91a879;
-}
-
-.Chart1 {
-  color: #a9a19b;
-  position: relative;
-  z-index: 100;
-  top: -48px;
-  cursor: cell;
-  left: 82px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChart2 {
-  position: relative;
-  background-color: #2a2626;
-  width: 171px;
-  height: 43px;
-  transition: 0.3s;
-  left: -65px;
-}
-
-.Chart2:hover ~ .DecadeBarChart2 .DecadeBarChart1_Detail2 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_Detail2 {
-  position: absolute;
-  width: 171px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.Objet2 {
-  height: 43px;
-  background-color: #8d2438;
-}
-.Mobilier2 {
-  height: 17px;
-  background-color: #c6bca2;
-}
-.Industriel2 {
-  height: 15px;
-  background-color: #e7a02c;
-}
-.Vestimentaire2 {
-  height: 9px;
-  background-color: #1a4d8b;
-}
-.Graphique2 {
-  height: 8px;
-  background-color: #da3035;
-}
-/* .Technologie2 {
+    position: relative;
+    display: flex;
+    top: 1000px;
+  }
+  
+  #body {
+    z-index: 20;
+    position: absolute;
+    top: -100px;
+    left: -70px;
+  }
+  
+  .script {
+    z-index: 20;
+  }
+  
+  .DecadeBarChartContainer {
+    border: solid 0px black;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    top: -854px;
+    left: 86px;
+    width: 3204px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    gap: 7px;
+  }
+  
+  .CreationDecadeQuantity {
+    border: solid 0px black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 12;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5em;
+    left: 90px;
+    width: 3204px;
+    gap: 165px;
+    color: #635c58;
+    top: 320px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartContainer [class^="DecadeBarChart1_Detail"],
+  .DecadeBarChartContainer2 [class^="DecadeBarChart1_Detail"] {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .DecadeBarChartContainer [class^="DecadeBarChart1_Detail"].active,
+  .DecadeBarChartContainer2 [class^="DecadeBarChart1_Detail"].active {
+    opacity: 1;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChart1 {
+    position: relative;
+    background-color: #2a2626;
+    width: 189px;
+    height: 48px;
+    transition: 0.3s;
+    left: -33px;
+  }
+  
+  .DecadeBarChart1_Detail1 {
+    width: 189px;
+  }
+  
+  .Objet1 {
+    height: 48px;
+    background-color: #8d2438;
+  }
+  .Mobilier1 {
+    height: 27px;
+    background-color: #c6bca2;
+  }
+  .Industriel1 {
+    height: 17px;
+    background-color: #e7a02c;
+  }
+  .Vestimentaire1 {
+    height: 9px;
+    background-color: #1a4d8b;
+  }
+  .Graphique1 {
+    height: 2px;
+    background-color: #da3035;
+  }
+  .Technologie1 {
     height: 0px;
     background-color: #83b7ca;
   }
-  .Architecture2 {
+  .Architecture1 {
     height: 0px;
     background-color: #91a879;
-  } */
-
-.Chart2 {
-  color: #a9a19b;
-  position: relative;
-  z-index: 200;
-  top: -43px;
-  cursor: cell;
-  left: 38px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChart3 {
-  position: relative;
-  background-color: #2a2626;
-  width: 171.5px;
-  height: 241px;
-  left: -106px;
-}
-
-.Chart3:hover ~ .DecadeBarChart3 .DecadeBarChart1_Detail3 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_Detail3 {
-  position: absolute;
-  width: 171.5px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.Objet3 {
-  height: 241px;
-  background-color: #8d2438;
-}
-.Mobilier3 {
-  height: 176px;
-  background-color: #c6bca2;
-}
-.Industriel3 {
-  height: 66px;
-  background-color: #e7a02c;
-}
-.Vestimentaire3 {
-  height: 57px;
-  background-color: #1a4d8b;
-}
-.Graphique3 {
-  height: 56px;
-  background-color: #da3035;
-}
-.Technologie3 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.Architecture3 {
-  height: 0px;
-  background-color: #91a879;
-}
-
-.Chart3 {
-  color: #a9a19b;
-  position: relative;
-  z-index: 100;
-  top: -241px;
-  cursor: cell;
-  left: 5px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChart4 {
-  background-color: #2a2626;
-  width: 171px;
-  height: 284px;
-  left: -151.5px;
-  position: relative;
-}
-
-.Chart4:hover ~ .DecadeBarChart4 .DecadeBarChart1_Detail4 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_Detail4 {
-  position: absolute;
-  width: 171px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.Objet4 {
-  height: 284px;
-  background-color: #8d2438;
-}
-.Mobilier4 {
-  height: 183px;
-  background-color: #c6bca2;
-}
-.Industriel4 {
-  height: 62px;
-  background-color: #e7a02c;
-}
-.Vestimentaire4 {
-  height: 28px;
-  background-color: #1a4d8b;
-}
-.Graphique4 {
-  height: 21px;
-  background-color: #da3035;
-}
-.Technologie4 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.Architecture4 {
-  height: 0px;
-  background-color: #91a879;
-}
-
-.Chart4 {
-  color: #a9a19b;
-  position: relative;
-  top: -284px;
-  left: -40px;
-  cursor: cell;
-  z-index: 100;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChart5 {
-  background-color: #2a2626;
-  width: 172px;
-  height: 92px;
-  left: -184px;
-  position: relative;
-}
-
-.Chart5:hover ~ .DecadeBarChart5 .DecadeBarChart1_Detail5 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_Detail5 {
-  position: absolute;
-  width: 172px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.Objet5 {
-  height: 92px;
-  background-color: #8d2438;
-}
-.Mobilier5 {
-  height: 77px;
-  background-color: #c6bca2;
-}
-.Industriel5 {
-  height: 36px;
-  background-color: #e7a02c;
-}
-.Vestimentaire5 {
-  height: 0px;
-  background-color: #1a4d8b;
-}
-.Graphique5 {
-  height: 10px;
-  background-color: #da3035;
-}
-.Technologie5 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.Architecture5 {
-  height: 0px;
-  background-color: #91a879;
-}
-
-.Chart5 {
-  color: #a9a19b;
-  position: relative;
-  left: -78px;
-  z-index: 100;
-  cursor: cell;
-  top: -92px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChart6 {
-  background-color: #2a2626;
-  width: 172px;
-  height: 455px;
-  left: -229.5px;
-  position: relative;
-}
-
-.Chart6:hover ~ .DecadeBarChart6 .DecadeBarChart1_Detail6 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_Detail6 {
-  position: absolute;
-  width: 172px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.Objet6 {
-  height: 455px;
-  background-color: #8d2438;
-}
-.Mobilier6 {
-  height: 363px;
-  background-color: #c6bca2;
-}
-.Industriel6 {
-  height: 228px;
-  background-color: #e7a02c;
-}
-.Vestimentaire6 {
-  height: 0px;
-  background-color: #1a4d8b;
-}
-.Graphique6 {
-  height: 158px;
-  background-color: #da3035;
-}
-.Technologie6 {
-  height: 11px;
-  background-color: #83b7ca;
-}
-.Architecture6 {
-  height: 0px;
-  background-color: #91a879;
-}
-
-.Chart6 {
-  color: #a9a19b;
-  position: relative;
-  z-index: 100;
-  top: -92px;
-  top: -455px;
-  cursor: cell;
-  left: -118px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChart7 {
-  background-color: #2a2626;
-  width: 172px;
-  height: 1076px;
-  left: -284.5px;
-  position: relative;
-}
-
-.Chart7:hover ~ .DecadeBarChart7 .DecadeBarChart1_Detail7 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_Detail7 {
-  position: absolute;
-  width: 172px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.Objet7 {
-  height: 1076px;
-  background-color: #8d2438;
-}
-.Mobilier7 {
-  height: 927px;
-  background-color: #c6bca2;
-}
-.Industriel7 {
-  height: 767px;
-  background-color: #e7a02c;
-}
-.Vestimentaire7 {
-  height: 616px;
-  background-color: #1a4d8b;
-}
-.Graphique7 {
-  height: 566px;
-  background-color: #da3035;
-}
-.Technologie7 {
-  height: 4px;
-  background-color: #83b7ca;
-}
-.Architecture7 {
-  height: 3px;
-  background-color: #91a879;
-}
-
-.Chart7 {
-  color: #a9a19b;
-  position: relative;
-  left: -166px;
-  z-index: 100;
-  cursor: cell;
-  top: -1076px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChart8 {
-  background-color: #2a2626;
-  width: 171px;
-  height: 1204px;
-  left: -341px;
-  position: relative;
-}
-
-.Chart8:hover ~ .DecadeBarChart8 .DecadeBarChart1_Detail8 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_Detail8 {
-  position: absolute;
-  width: 171px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.Objet8 {
-  height: 1204px;
-  background-color: #8d2438;
-}
-.Mobilier8 {
-  height: 1080px;
-  background-color: #c6bca2;
-}
-.Industriel8 {
-  height: 944px;
-  background-color: #e7a02c;
-}
-.Vestimentaire8 {
-  height: 820px;
-  background-color: #1a4d8b;
-}
-.Graphique8 {
-  height: 817px;
-  background-color: #da3035;
-}
-.Technologie8 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.Architecture8 {
-  height: 10px;
-  background-color: #91a879;
-}
-
-.Chart8 {
-  color: #a9a19b;
-  position: relative;
-  left: -223px;
-  z-index: 100;
-  cursor: cell;
-  top: -1204px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChart9 {
-  background-color: #2a2626;
-  width: 172px;
-  height: 1105px;
-  left: -391px;
-  position: relative;
-}
-
-.Chart9:hover ~ .DecadeBarChart9 .DecadeBarChart1_Detail9 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_Detail9 {
-  position: absolute;
-  width: 172px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.Objet9 {
-  height: 1105px;
-  background-color: #8d2438;
-}
-.Mobilier9 {
-  height: 901px;
-  background-color: #c6bca2;
-}
-.Industriel9 {
-  height: 798px;
-  background-color: #e7a02c;
-}
-.Vestimentaire9 {
-  height: 0px;
-  background-color: #1a4d8b;
-}
-.Graphique9 {
-  height: 737px;
-  background-color: #da3035;
-}
-.Technologie9 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.Architecture9 {
-  height: 3px;
-  background-color: #91a879;
-}
-
-.Chart9 {
-  color: #a9a19b;
-  position: relative;
-  left: -277px;
-  z-index: 100;
-  cursor: cell;
-  top: -1105px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChart10 {
-  background-color: #2a2626;
-  width: 171px;
-  height: 1126px;
-  left: -440.5px;
-  position: relative;
-}
-
-.Chart10:hover ~ .DecadeBarChart10 .DecadeBarChart1_Detail10 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_Detail10 {
-  position: absolute;
-  width: 171px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.Objet10 {
-  height: 1126px;
-  background-color: #8d2438;
-}
-.Mobilier10 {
-  height: 904px;
-  background-color: #c6bca2;
-}
-.Industriel10 {
-  height: 766px;
-  background-color: #e7a02c;
-}
-.Vestimentaire10 {
-  height: 679px;
-  background-color: #1a4d8b;
-}
-.Graphique10 {
-  height: 642px;
-  background-color: #da3035;
-}
-.Technologie10 {
-  height: 14px;
-  background-color: #83b7ca;
-}
-.Architecture10 {
-  height: 4px;
-  background-color: #91a879;
-}
-
-.Chart10 {
-  color: #a9a19b;
-  position: relative;
-  left: -328px;
-  z-index: 100;
-  cursor: cell;
-  top: -1126px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChart11 {
-  background-color: #2a2626;
-  width: 171px;
-  height: 1008px;
-  left: -497.5px;
-  position: relative;
-}
-
-.Chart11:hover ~ .DecadeBarChart11 .DecadeBarChart1_Detail11 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_Detail11 {
-  position: absolute;
-  width: 171px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.Objet11 {
-  height: 1008px;
-  background-color: #8d2438;
-}
-.Mobilier11 {
-  height: 834px;
-  background-color: #c6bca2;
-}
-.Industriel11 {
-  height: 666px;
-  background-color: #e7a02c;
-}
-.Vestimentaire11 {
-  height: 586px;
-  background-color: #1a4d8b;
-}
-.Graphique11 {
-  height: 569px;
-  background-color: #da3035;
-}
-.Technologie11 {
-  height: 11px;
-  background-color: #83b7ca;
-}
-.Architecture11 {
-  height: 1px;
-  background-color: #91a879;
-}
-
-.Chart11 {
-  color: #a9a19b;
-  position: relative;
-  left: -379px;
-  z-index: 100;
-  cursor: cell;
-  top: -1008px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChart12 {
-  background-color: #2a2626;
-  width: 170.5px;
-  height: 1128px;
-  left: -545.5px;
-  position: relative;
-}
-
-.Chart12:hover ~ .DecadeBarChart12 .DecadeBarChart1_Detail12 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_Detail12 {
-  position: absolute;
-  width: 170.5px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.Objet12 {
-  height: 1128px;
-  background-color: #8d2438;
-}
-.Mobilier12 {
-  height: 969px;
-  background-color: #c6bca2;
-}
-.Industriel12 {
-  height: 913px;
-  background-color: #e7a02c;
-}
-.Vestimentaire12 {
-  height: 893px;
-  background-color: #1a4d8b;
-}
-.Graphique12 {
-  height: 886px;
-  background-color: #da3035;
-}
-.Technologie12 {
-  height: 71px;
-  background-color: #83b7ca;
-}
-.Architecture12 {
-  height: 15px;
-  background-color: #91a879;
-}
-
-.Chart12 {
-  color: #a9a19b;
-  position: relative;
-  left: -435px;
-  z-index: 100;
-  cursor: cell;
-  top: -1128px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChart13 {
-  background-color: #2a2626;
-  width: 29px;
-  height: 20px;
-  left: -580px;
-  position: relative;
-}
-
-.Chart13:hover ~ .DecadeBarChart13 .DecadeBarChart1_Detail13 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_Detail13 {
-  position: absolute;
-  width: 29px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.Objet13 {
-  height: 20px;
-  background-color: #8d2438;
-}
-.Mobilier13 {
-  height: 18px;
-  background-color: #c6bca2;
-}
-.Industriel13 {
-  height: 0px;
-  background-color: #e7a02c;
-}
-.Vestimentaire13 {
-  height: 17px;
-  background-color: #1a4d8b;
-}
-.Graphique13 {
-  height: 0px;
-  background-color: #da3035;
-}
-.Technologie13 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.Architecture13 {
-  height: 7px;
-  background-color: #91a879;
-}
-
-.Chart13 {
-  color: #a9a19b;
-  position: relative;
-  z-index: 100;
-  left: -545px;
-  cursor: cell;
-  top: -20px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartContainer2 {
-  border: solid 0px black;
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  top: -454px;
-  left: 86px;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.5em;
-  /* width: 3204px; */
-  gap: 7px;
-}
-
-.AcquisitionDecadeQuantity {
-  border: solid 0px black;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 12;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 500;
-  font-size: 1.5em;
-  font-weight: 400;
-  left: 90px;
-  width: 3204px;
-  gap: 165px;
-  color: #635c58;
-  top: 751px;
-  z-index: 250;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartA1 {
-  position: relative;
-  background-color: #2a2626;
-  width: 100px;
-  height: 8px;
-  transition: 0.3s;
-  left: 69px;
-}
-
-.ChartA1:hover + .DecadeBarChartA1 .DecadeBarChart1_DetailA1 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_DetailA1 {
-  position: absolute;
-  width: 100px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.A-Objet1 {
-  height: 8px;
-  background-color: #8d2438;
-}
-.A-Mobilier1 {
-  height: 0px;
-  background-color: #c6bca2;
-}
-.A-Industriel1 {
-  height: 0px;
-  background-color: #e7a02c;
-}
-.A-Vestimentaire1 {
-  height: 0x;
-  background-color: #1a4d8b;
-}
-.A-Graphique1 {
-  height: 0px;
-  background-color: #da3035;
-}
-.A-Technologie1 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.A-Architecture1 {
-  height: 0px;
-  background-color: #91a879;
-}
-
-.ChartA1 {
-  color: #a9a19b;
-  position: relative;
-  top: 12px;
-  left: 134px;
-  z-index: 1000;
-  cursor: cell;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartA2 {
-  position: relative;
-  background-color: #2a2626;
-  width: 171px;
-  height: 14px;
-  transition: 0.3s;
-  left: 41.8px;
-}
-
-.ChartA2:hover + .DecadeBarChartA2 .DecadeBarChart1_DetailA2 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_DetailA2 {
-  position: absolute;
-  width: 171px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.A-Objet2 {
-  height: 14px;
-  background-color: #8d2438;
-}
-.A-Mobilier2 {
-  height: 0px;
-  background-color: #c6bca2;
-}
-.A-Industriel2 {
-  height: 0px;
-  background-color: #e7a02c;
-}
-.A-Vestimentaire2 {
-  height: 0px;
-  background-color: #1a4d8b;
-}
-.A-Graphique2 {
-  height: 2px;
-  background-color: #da3035;
-}
-.A-Technologie2 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.A-Architecture2 {
-  height: 0px;
-  background-color: #91a879;
-}
-
-.ChartA2 {
-  color: #a9a19b;
-  position: relative;
-  top: 18px;
-  left: 143px;
-  cursor: cell;
-  z-index: 1000;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartA3 {
-  position: relative;
-  background-color: #2a2626;
-  width: 171.5px;
-  height: 17px;
-  transition: 0.3s;
-  left: 15.1px;
-}
-
-.ChartA3:hover + .DecadeBarChartA3 .DecadeBarChart1_DetailA3 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_DetailA3 {
-  position: absolute;
-  width: 171.5px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.A-Objet3 {
-  height: 17px;
-  background-color: #8d2438;
-}
-.A-Mobilier3 {
-  height: 0px;
-  background-color: #c6bca2;
-}
-.A-Industriel3 {
-  height: 0px;
-  background-color: #e7a02c;
-}
-.A-Vestimentaire3 {
-  height: 1px;
-  background-color: #1a4d8b;
-}
-.A-Graphique3 {
-  height: 0px;
-  background-color: #da3035;
-}
-.A-Technologie3 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.A-Architecture3 {
-  height: 0px;
-  background-color: #91a879;
-}
-
-.ChartA3 {
-  color: #a9a19b;
-  position: relative;
-  top: 21px;
-  left: 116px;
-  cursor: cell;
-  z-index: 1000;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartA4 {
-  position: relative;
-  background-color: #2a2626;
-  width: 171.5px;
-  height: 28px;
-  transition: 0.3s;
-  left: -17px;
-}
-
-.ChartA4:hover + .DecadeBarChartA4 .DecadeBarChart1_DetailA4 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_DetailA4 {
-  position: absolute;
-  width: 171.5px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.A-Objet4 {
-  height: 28px;
-  background-color: #8d2438;
-}
-.A-Mobilier4 {
-  height: 11px;
-  background-color: #c6bca2;
-}
-.A-Industriel4 {
-  height: 0px;
-  background-color: #e7a02c;
-}
-.A-Vestimentaire4 {
-  height: 7px;
-  background-color: #1a4d8b;
-}
-.A-Graphique4 {
-  height: 0px;
-  background-color: #da3035;
-}
-.A-Technologie4 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.A-Architecture4 {
-  height: 0px;
-  background-color: #91a879;
-}
-
-.ChartA4 {
-  color: #a9a19b;
-  position: relative;
-  top: 32px;
-  left: 88px;
-  cursor: cell;
-  z-index: 1000;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartA5 {
-  position: relative;
-  background-color: #2a2626;
-  width: 172px;
-  height: 6px;
-  transition: 0.3s;
-  left: -37px;
-}
-
-.ChartA5:hover + .DecadeBarChartA5 .DecadeBarChart1_DetailA5 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_DetailA5 {
-  position: absolute;
-  width: 171.5px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.A-Objet5 {
-  height: 6px;
-  background-color: #8d2438;
-}
-.A-Mobilier5 {
-  height: 1px;
-  background-color: #c6bca2;
-}
-.A-Industriel5 {
-  height: 0px;
-  background-color: #e7a02c;
-}
-.A-Vestimentaire5 {
-  height: 0px;
-  background-color: #1a4d8b;
-}
-.A-Graphique5 {
-  height: 0px;
-  background-color: #da3035;
-}
-.A-Technologie5 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.A-Architecture5 {
-  height: 0px;
-  background-color: #91a879;
-}
-
-.ChartA5 {
-  color: #a9a19b;
-  position: relative;
-  left: 62px;
-  z-index: 1000;
-  cursor: cell;
-  top: 10px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartA6 {
-  background-color: #2a2626;
-  width: 172px;
-  height: 60px;
-  transition: 0.3s;
-  left: -72.5px;
-  position: relative;
-}
-
-.ChartA6:hover + .DecadeBarChartA6 .DecadeBarChart1_DetailA6 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_DetailA6 {
-  position: absolute;
-  width: 171.5px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.A-Objet6 {
-  height: 60px;
-  background-color: #8d2438;
-}
-.A-Mobilier6 {
-  height: 1px;
-  background-color: #c6bca2;
-}
-.A-Industriel6 {
-  height: 0px;
-  background-color: #e7a02c;
-}
-.A-Vestimentaire6 {
-  height: 1px;
-  background-color: #1a4d8b;
-}
-.A-Graphique6 {
-  height: 0px;
-  background-color: #da3035;
-}
-.A-Technologie6 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.A-Architecture6 {
-  height: 0px;
-  background-color: #91a879;
-}
-
-.ChartA6 {
-  color: #a9a19b;
-  position: relative;
-  left: 38px;
-  z-index: 1000;
-  cursor: cell;
-  top: 63px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartA7 {
-  background-color: #2a2626;
-  width: 172px;
-  height: 32px;
-  transition: 0.3s;
-  left: -105.2px;
-  position: relative;
-}
-
-.ChartA7:hover + .DecadeBarChartA7 .DecadeBarChart1_DetailA7 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_DetailA7 {
-  position: absolute;
-  width: 172px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.A-Objet7 {
-  height: 32px;
-  background-color: #8d2438;
-}
-.A-Mobilier7 {
-  height: 25px;
-  background-color: #c6bca2;
-}
-.A-Industriel7 {
-  height: 23px;
-  background-color: #e7a02c;
-}
-.A-Vestimentaire7 {
-  height: 19px;
-  background-color: #1a4d8b;
-}
-.A-Graphique7 {
-  height: 18px;
-  background-color: #da3035;
-}
-.A-Technologie7 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.A-Architecture7 {
-  height: 1px;
-  background-color: #91a879;
-}
-
-.ChartA7 {
-  color: #a9a19b;
-  position: relative;
-  left: 2px;
-  z-index: 1000;
-  cursor: cell;
-  top: 36px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartA8 {
-  background-color: #2a2626;
-  width: 171px;
-  height: 102px;
-  transition: 0.3s;
-  left: -148.5px;
-  position: relative;
-}
-
-.ChartA8:hover + .DecadeBarChartA8 .DecadeBarChart1_DetailA8 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_DetailA8 {
-  position: absolute;
-  width: 171px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.A-Objet8 {
-  height: 102px;
-  background-color: #8d2438;
-}
-.A-Mobilier8 {
-  height: 98px;
-  background-color: #c6bca2;
-}
-.A-Industriel8 {
-  height: 0px;
-  background-color: #e7a02c;
-}
-.A-Vestimentaire8 {
-  height: 0px;
-  background-color: #1a4d8b;
-}
-.A-Graphique8 {
-  height: 91px;
-  background-color: #da3035;
-}
-.A-Technologie8 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.A-Architecture8 {
-  height: 1px;
-  background-color: #91a879;
-}
-.ChartA8 {
-  color: #a9a19b;
-  position: relative;
-  left: -35px;
-  z-index: 1000;
-  cursor: cell;
-  top: 106px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartA9 {
-  background-color: #2a2626;
-  width: 172px;
-  height: 19px;
-  transition: 0.3s;
-  left: -175.5px;
-  position: relative;
-}
-
-.ChartA9:hover + .DecadeBarChartA9 .DecadeBarChart1_DetailA9 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_DetailA9 {
-  position: absolute;
-  width: 172px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.A-Objet9 {
-  height: 19px;
-  background-color: #8d2438;
-}
-.A-Mobilier9 {
-  height: 15px;
-  background-color: #c6bca2;
-}
-.A-Industriel9 {
-  height: 0px;
-  background-color: #e7a02c;
-}
-.A-Vestimentaire9 {
-  height: 0px;
-  background-color: #1a4d8b;
-}
-.A-Graphique9 {
-  height: 8px;
-  background-color: #da3035;
-}
-.A-Technologie9 {
-  height: 0px;
-  background-color: #83b7ca;
-}
-.A-Architecture9 {
-  height: 0px;
-  background-color: #91a879;
-}
-
-.ChartA9 {
-  color: #a9a19b;
-  position: relative;
-  left: -72px;
-  z-index: 1000;
-  cursor: cell;
-  top: 23px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartA10 {
-  background-color: #2a2626;
-  width: 171px;
-  height: 1842px;
-  transition: 0.3s;
-  left: -283.3px;
-  position: relative;
-}
-
-.ChartA10:hover ~ .DecadeBarChartA10 .DecadeBarChart1_DetailA10,
-.ChartA10Bis:hover ~ .DecadeBarChartA10 .DecadeBarChart1_DetailA10  {
-  opacity: 1;
-}
-
-.DecadeBarChart1_DetailA10 {
-  position: absolute;
-  width: 172px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.A-Objet10 {
-  height: 1842px;
-  background-color: #8d2438;
-}
-.A-Mobilier10 {
-  height: 1539px;
-  background-color: #c6bca2;
-}
-.A-Industriel10 {
-  height: 1198px;
-  background-color: #e7a02c;
-}
-.A-Vestimentaire10 {
-  height: 839px;
-  background-color: #1a4d8b;
-}
-.A-Graphique10 {
-  height: 756px;
-  background-color: #da3035;
-}
-.A-Technologie10 {
-  height: 12px;
-  background-color: #83b7ca;
-}
-.A-Architecture10 {
-  height: 5px;
-  background-color: #91a879;
-}
-
-.ChartA10 {
-  color: #a9a19b;
-  position: relative;
-  left: -115px;
-  z-index: 1000;
-  cursor: cell;
-  top: 1846px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartA11 {
-  background-color: #2a2626;
-  width: 171.2px;
-  height: 1803px;
-  transition: 0.3s;
-  left: -392.3px;
-  position: relative;
-}
-
-.ChartA11:hover ~ .DecadeBarChartA11 .DecadeBarChart1_DetailA11,
-.ChartA11Bis:hover ~ .DecadeBarChartA11 .DecadeBarChart1_DetailA11  {
-  opacity: 1;
-}
-
-.DecadeBarChart1_DetailA11 {
-  position: absolute;
-  width: 171.2px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.A-Objet11 {
-  height: 1803px;
-  background-color: #8d2438;
-}
-.A-Mobilier11 {
-  height: 1426px;
-  background-color: #c6bca2;
-}
-.A-Industriel11 {
-  height: 972px;
-  background-color: #e7a02c;
-}
-.A-Vestimentaire11 {
-  height: 719px;
-  background-color: #1a4d8b;
-}
-.A-Graphique11 {
-  height: 689px;
-  background-color: #da3035;
-}
-.A-Technologie11 {
-  height: 21px;
-  background-color: #83b7ca;
-}
-.A-Architecture11 {
-  height: 13px;
-  background-color: #91a879;
-}
-
-.ChartA11 {
-  color: #a9a19b;
-  position: relative;
-  left: -220px;
-  z-index: 1000;
-  cursor: cell;
-  top: 1807px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartA12 {
-  background-color: #2a2626;
-  margin-left: 1px;
-  width: 171px;
-  height: 3378px;
-  transition: 0.3s;
-  left: -504.2px;
-  position: relative;
-}
-
-.ChartA12:hover ~ .DecadeBarChartA12 .DecadeBarChart1_DetailA12,
-.ChartA12Bis:hover ~ .DecadeBarChartA12 .DecadeBarChart1_DetailA12  {
-  opacity: 1;
-}
-
-.DecadeBarChart1_DetailA12 {
-  position: absolute;
-  width: 171px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.A-Objet12 {
-  height: 3378px;
-  background-color: #8d2438;
-}
-.A-Mobilier12 {
-  height: 3207px;
-  background-color: #c6bca2;
-}
-.A-Industriel12 {
-  height: 2914px;
-  background-color: #e7a02c;
-}
-.A-Vestimentaire12 {
-  height: 0px;
-  background-color: #1a4d8b;
-}
-.A-Graphique12 {
-  height: 2864px;
-  background-color: #da3035;
-}
-.A-Technologie12 {
-  height: 66px;
-  background-color: #83b7ca;
-}
-.A-Architecture12 {
-  height: 13px;
-  background-color: #91a879;
-}
-
-.ChartA12 {
-  color: #a9a19b;
-  position: relative;
-  left: -327px;
-  z-index: 1000;
-  cursor: cell;
-  top: 3382px;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.DecadeBarChartA13 {
-  background-color: #2a2626;
-  width: 46px;
-  height: 207px;
-  transition: 0.3s;
-  left: -550.5px;
-  position: relative;
-}
-
-.ChartA13:hover + .DecadeBarChartA13 .DecadeBarChart1_DetailA13 {
-  opacity: 1;
-}
-
-.DecadeBarChart1_DetailA13 {
-  position: absolute;
-  width: 46px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.A-Objet13 {
-  height: 207px;
-  background-color: #8d2438;
-}
-.A-Mobilier13 {
-  height: 149px;
-  background-color: #c6bca2;
-}
-.A-Industriel13 {
-  height: 78px;
-  background-color: #e7a02c;
-}
-.A-Vestimentaire13 {
-  height: 70px;
-  background-color: #1a4d8b;
-}
-.A-Graphique13 {
-  height: 57px;
-  background-color: #da3035;
-}
-.A-Technologie13 {
-  height: 37px;
-  background-color: #83b7ca;
-}
-.A-Architecture13 {
-  height: 10px;
-  background-color: #91a879;
-}
-
-.ChartA13 {
-  color: #a9a19b;
-  position: relative;
-  left: -499px;
-  z-index: 1000;
-  cursor: cell;
-  top: 211px;
-}
-
-.DesignDetail {
-  position: relative;
-  top: 1500px;
-  left: 100px;
-}
-
-.ChartA10Bis {
-  color: #a9a19b;
-  position: relative;
-  top: 292px;
-  left: -567px;
-  cursor: cell;
-  z-index: 1000;
-}
-
-.ChartA11Bis {
-  color: #a9a19b;
-  position: relative;
-  top: 292px;
-  left: -782px;
-  cursor: cell;
-  z-index: 1000;
-}
-
-.ChartA12Bis {
-  color: #a9a19b;
-  position: relative;
-  top: 292px;
-  left: -999px;
-  cursor: cell;
-  z-index: 1000;
-}
-
-.underline{
-  position: relative;
-  border: solid 1px #c6bca2;
-  width: 330px;
-  top: 320px;
-  left: -1486px;
-}
-
-.line1{
-  position: relative;
-  border: solid 1px #c6bca2;
-  height: 15px;
-  top: 304px;
-  left: -1757px;
-}
-
-.line2{
-  position: relative;
-  border: solid 1px #c6bca2;
-  height: 15px;
-  top: 304px;
-  left: -1695px;
-}
-
-.info_line{
-  top: 304px;
-  left: -1695px;
-  position: relative;
-}
+  }
+  
+  .Chart1 {
+    color: #a9a19b;
+    position: relative;
+    z-index: 100;
+    top: -48px;
+    cursor: cell;
+    left: 82px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChart2 {
+    position: relative;
+    background-color: #2a2626;
+    width: 171px;
+    height: 43px;
+    transition: 0.3s;
+    left: -65px;
+  }
+  
+  .DecadeBarChart1_Detail2 {
+    width: 171px;
+  }
+  
+  .Objet2 {
+    height: 43px;
+    background-color: #8d2438;
+  }
+  .Mobilier2 {
+    height: 17px;
+    background-color: #c6bca2;
+  }
+  .Industriel2 {
+    height: 15px;
+    background-color: #e7a02c;
+  }
+  .Vestimentaire2 {
+    height: 9px;
+    background-color: #1a4d8b;
+  }
+  .Graphique2 {
+    height: 8px;
+    background-color: #da3035;
+  }
+  
+  .Chart2 {
+    color: #a9a19b;
+    position: relative;
+    z-index: 200;
+    top: -43px;
+    cursor: cell;
+    left: 38px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChart3 {
+    position: relative;
+    background-color: #2a2626;
+    width: 171.5px;
+    height: 241px;
+    left: -106px;
+  }
+  
+  .DecadeBarChart1_Detail3 {
+    width: 171.5px;
+  }
+  
+  .Objet3 {
+    height: 241px;
+    background-color: #8d2438;
+  }
+  .Mobilier3 {
+    height: 176px;
+    background-color: #c6bca2;
+  }
+  .Industriel3 {
+    height: 66px;
+    background-color: #e7a02c;
+  }
+  .Vestimentaire3 {
+    height: 57px;
+    background-color: #1a4d8b;
+  }
+  .Graphique3 {
+    height: 56px;
+    background-color: #da3035;
+  }
+  .Technologie3 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .Architecture3 {
+    height: 0px;
+    background-color: #91a879;
+  }
+  
+  .Chart3 {
+    color: #a9a19b;
+    position: relative;
+    z-index: 100;
+    top: -241px;
+    cursor: cell;
+    left: 5px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChart4 {
+    background-color: #2a2626;
+    width: 171px;
+    height: 284px;
+    left: -151.5px;
+    position: relative;
+  }
+  
+  .DecadeBarChart1_Detail4 {
+    width: 171px;
+  }
+  
+  .Objet4 {
+    height: 284px;
+    background-color: #8d2438;
+  }
+  .Mobilier4 {
+    height: 183px;
+    background-color: #c6bca2;
+  }
+  .Industriel4 {
+    height: 62px;
+    background-color: #e7a02c;
+  }
+  .Vestimentaire4 {
+    height: 28px;
+    background-color: #1a4d8b;
+  }
+  .Graphique4 {
+    height: 21px;
+    background-color: #da3035;
+  }
+  .Technologie4 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .Architecture4 {
+    height: 0px;
+    background-color: #91a879;
+  }
+  
+  .Chart4 {
+    color: #a9a19b;
+    position: relative;
+    top: -284px;
+    left: -40px;
+    cursor: cell;
+    z-index: 100;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChart5 {
+    background-color: #2a2626;
+    width: 172px;
+    height: 92px;
+    left: -184px;
+    position: relative;
+  }
+  
+  .DecadeBarChart1_Detail5 {
+    width: 172px;
+  }
+  
+  .Objet5 {
+    height: 92px;
+    background-color: #8d2438;
+  }
+  .Mobilier5 {
+    height: 77px;
+    background-color: #c6bca2;
+  }
+  .Industriel5 {
+    height: 36px;
+    background-color: #e7a02c;
+  }
+  .Vestimentaire5 {
+    height: 0px;
+    background-color: #1a4d8b;
+  }
+  .Graphique5 {
+    height: 10px;
+    background-color: #da3035;
+  }
+  .Technologie5 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .Architecture5 {
+    height: 0px;
+    background-color: #91a879;
+  }
+  
+  .Chart5 {
+    color: #a9a19b;
+    position: relative;
+    left: -78px;
+    z-index: 100;
+    cursor: cell;
+    top: -92px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChart6 {
+    background-color: #2a2626;
+    width: 172px;
+    height: 455px;
+    left: -229.5px;
+    position: relative;
+  }
+  
+  .DecadeBarChart1_Detail6 {
+    width: 172px;
+  }
+  
+  .Objet6 {
+    height: 455px;
+    background-color: #8d2438;
+  }
+  .Mobilier6 {
+    height: 363px;
+    background-color: #c6bca2;
+  }
+  .Industriel6 {
+    height: 228px;
+    background-color: #e7a02c;
+  }
+  .Vestimentaire6 {
+    height: 0px;
+    background-color: #1a4d8b;
+  }
+  .Graphique6 {
+    height: 158px;
+    background-color: #da3035;
+  }
+  .Technologie6 {
+    height: 11px;
+    background-color: #83b7ca;
+  }
+  .Architecture6 {
+    height: 0px;
+    background-color: #91a879;
+  }
+  
+  .Chart6 {
+    color: #a9a19b;
+    position: relative;
+    z-index: 100;
+    top: -92px;
+    top: -455px;
+    cursor: cell;
+    left: -118px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChart7 {
+    background-color: #2a2626;
+    width: 172px;
+    height: 1076px;
+    left: -284.5px;
+    position: relative;
+  }
+  
+  .DecadeBarChart1_Detail7 {
+    width: 172px;
+  }
+  
+  .Objet7 {
+    height: 1076px;
+    background-color: #8d2438;
+  }
+  .Mobilier7 {
+    height: 927px;
+    background-color: #c6bca2;
+  }
+  .Industriel7 {
+    height: 767px;
+    background-color: #e7a02c;
+  }
+  .Vestimentaire7 {
+    height: 616px;
+    background-color: #1a4d8b;
+  }
+  .Graphique7 {
+    height: 566px;
+    background-color: #da3035;
+  }
+  .Technologie7 {
+    height: 4px;
+    background-color: #83b7ca;
+  }
+  .Architecture7 {
+    height: 3px;
+    background-color: #91a879;
+  }
+  
+  .Chart7 {
+    color: #a9a19b;
+    position: relative;
+    left: -166px;
+    z-index: 100;
+    cursor: cell;
+    top: -1076px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChart8 {
+    background-color: #2a2626;
+    width: 171px;
+    height: 1204px;
+    left: -341px;
+    position: relative;
+  }
+  
+  .DecadeBarChart1_Detail8 {
+    width: 171px;
+  }
+  
+  .Objet8 {
+    height: 1204px;
+    background-color: #8d2438;
+  }
+  .Mobilier8 {
+    height: 1080px;
+    background-color: #c6bca2;
+  }
+  .Industriel8 {
+    height: 944px;
+    background-color: #e7a02c;
+  }
+  .Vestimentaire8 {
+    height: 820px;
+    background-color: #1a4d8b;
+  }
+  .Graphique8 {
+    height: 817px;
+    background-color: #da3035;
+  }
+  .Technologie8 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .Architecture8 {
+    height: 10px;
+    background-color: #91a879;
+  }
+  
+  .Chart8 {
+    color: #a9a19b;
+    position: relative;
+    left: -223px;
+    z-index: 100;
+    cursor: cell;
+    top: -1204px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChart9 {
+    background-color: #2a2626;
+    width: 172px;
+    height: 1105px;
+    left: -391px;
+    position: relative;
+  }
+  
+  .DecadeBarChart1_Detail9 {
+    width: 172px;
+  }
+  
+  .Objet9 {
+    height: 1105px;
+    background-color: #8d2438;
+  }
+  .Mobilier9 {
+    height: 901px;
+    background-color: #c6bca2;
+  }
+  .Industriel9 {
+    height: 798px;
+    background-color: #e7a02c;
+  }
+  .Vestimentaire9 {
+    height: 0px;
+    background-color: #1a4d8b;
+  }
+  .Graphique9 {
+    height: 737px;
+    background-color: #da3035;
+  }
+  .Technologie9 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .Architecture9 {
+    height: 3px;
+    background-color: #91a879;
+  }
+  
+  .Chart9 {
+    color: #a9a19b;
+    position: relative;
+    left: -277px;
+    z-index: 100;
+    cursor: cell;
+    top: -1105px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChart10 {
+    background-color: #2a2626;
+    width: 171px;
+    height: 1126px;
+    left: -440.5px;
+    position: relative;
+  }
+  
+  .DecadeBarChart1_Detail10 {
+    width: 171px;
+  }
+  
+  .Objet10 {
+    height: 1126px;
+    background-color: #8d2438;
+  }
+  .Mobilier10 {
+    height: 904px;
+    background-color: #c6bca2;
+  }
+  .Industriel10 {
+    height: 766px;
+    background-color: #e7a02c;
+  }
+  .Vestimentaire10 {
+    height: 679px;
+    background-color: #1a4d8b;
+  }
+  .Graphique10 {
+    height: 642px;
+    background-color: #da3035;
+  }
+  .Technologie10 {
+    height: 14px;
+    background-color: #83b7ca;
+  }
+  .Architecture10 {
+    height: 4px;
+    background-color: #91a879;
+  }
+  
+  .Chart10 {
+    color: #a9a19b;
+    position: relative;
+    left: -328px;
+    z-index: 100;
+    cursor: cell;
+    top: -1126px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChart11 {
+    background-color: #2a2626;
+    width: 171px;
+    height: 1008px;
+    left: -497.5px;
+    position: relative;
+  }
+  
+  .DecadeBarChart1_Detail11 {
+    width: 171px;
+  }
+  
+  .Objet11 {
+    height: 1008px;
+    background-color: #8d2438;
+  }
+  .Mobilier11 {
+    height: 834px;
+    background-color: #c6bca2;
+  }
+  .Industriel11 {
+    height: 666px;
+    background-color: #e7a02c;
+  }
+  .Vestimentaire11 {
+    height: 586px;
+    background-color: #1a4d8b;
+  }
+  .Graphique11 {
+    height: 569px;
+    background-color: #da3035;
+  }
+  .Technologie11 {
+    height: 11px;
+    background-color: #83b7ca;
+  }
+  .Architecture11 {
+    height: 1px;
+    background-color: #91a879;
+  }
+  
+  .Chart11 {
+    color: #a9a19b;
+    position: relative;
+    left: -379px;
+    z-index: 100;
+    cursor: cell;
+    top: -1008px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChart12 {
+    background-color: #2a2626;
+    width: 170.5px;
+    height: 1128px;
+    left: -545.5px;
+    position: relative;
+  }
+  
+  .DecadeBarChart1_Detail12 {
+    width: 170.5px;
+  }
+  
+  .Objet12 {
+    height: 1128px;
+    background-color: #8d2438;
+  }
+  .Mobilier12 {
+    height: 969px;
+    background-color: #c6bca2;
+  }
+  .Industriel12 {
+    height: 913px;
+    background-color: #e7a02c;
+  }
+  .Vestimentaire12 {
+    height: 893px;
+    background-color: #1a4d8b;
+  }
+  .Graphique12 {
+    height: 886px;
+    background-color: #da3035;
+  }
+  .Technologie12 {
+    height: 71px;
+    background-color: #83b7ca;
+  }
+  .Architecture12 {
+    height: 15px;
+    background-color: #91a879;
+  }
+  
+  .Chart12 {
+    color: #a9a19b;
+    position: relative;
+    left: -435px;
+    z-index: 100;
+    cursor: cell;
+    top: -1128px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChart13 {
+    background-color: #2a2626;
+    width: 29px;
+    height: 20px;
+    left: -580px;
+    position: relative;
+  }
+  
+  .DecadeBarChart1_Detail13 {
+    width: 29px;
+  }
+  
+  .Objet13 {
+    height: 20px;
+    background-color: #8d2438;
+  }
+  .Mobilier13 {
+    height: 18px;
+    background-color: #c6bca2;
+  }
+  .Industriel13 {
+    height: 0px;
+    background-color: #e7a02c;
+  }
+  .Vestimentaire13 {
+    height: 17px;
+    background-color: #1a4d8b;
+  }
+  .Graphique13 {
+    height: 0px;
+    background-color: #da3035;
+  }
+  .Technologie13 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .Architecture13 {
+    height: 7px;
+    background-color: #91a879;
+  }
+  
+  .Chart13 {
+    color: #a9a19b;
+    position: relative;
+    z-index: 100;
+    left: -545px;
+    cursor: cell;
+    top: -20px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartContainer2 {
+    border: solid 0px black;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    top: -454px;
+    left: 86px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5em;
+    /* width: 3204px; */
+    gap: 7px;
+  }
+  
+  .AcquisitionDecadeQuantity {
+    border: solid 0px black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 12;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    font-weight: 400;
+    left: 90px;
+    width: 3204px;
+    gap: 165px;
+    color: #635c58;
+    top: 751px;
+    z-index: 250;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartA1 {
+    position: relative;
+    background-color: #2a2626;
+    width: 100px;
+    height: 8px;
+    transition: 0.3s;
+    left: 69px;
+  }
+  
+  .DecadeBarChart1_DetailA1 {
+    width: 100px;
+  }
+  
+  .A-Objet1 {
+    height: 8px;
+    background-color: #8d2438;
+  }
+  .A-Mobilier1 {
+    height: 0px;
+    background-color: #c6bca2;
+  }
+  .A-Industriel1 {
+    height: 0px;
+    background-color: #e7a02c;
+  }
+  .A-Vestimentaire1 {
+    height: 0x;
+    background-color: #1a4d8b;
+  }
+  .A-Graphique1 {
+    height: 0px;
+    background-color: #da3035;
+  }
+  .A-Technologie1 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .A-Architecture1 {
+    height: 0px;
+    background-color: #91a879;
+  }
+  
+  .ChartA1 {
+    color: #a9a19b;
+    position: relative;
+    top: 12px;
+    left: 134px;
+    z-index: 1000;
+    cursor: cell;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartA2 {
+    position: relative;
+    background-color: #2a2626;
+    width: 171px;
+    height: 14px;
+    transition: 0.3s;
+    left: 41.8px;
+  }
+  
+  .DecadeBarChart1_DetailA2 {
+    width: 171px;
+  }
+  
+  .A-Objet2 {
+    height: 14px;
+    background-color: #8d2438;
+  }
+  .A-Mobilier2 {
+    height: 0px;
+    background-color: #c6bca2;
+  }
+  .A-Industriel2 {
+    height: 0px;
+    background-color: #e7a02c;
+  }
+  .A-Vestimentaire2 {
+    height: 0px;
+    background-color: #1a4d8b;
+  }
+  .A-Graphique2 {
+    height: 2px;
+    background-color: #da3035;
+  }
+  .A-Technologie2 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .A-Architecture2 {
+    height: 0px;
+    background-color: #91a879;
+  }
+  
+  .ChartA2 {
+    color: #a9a19b;
+    position: relative;
+    top: 18px;
+    left: 143px;
+    cursor: cell;
+    z-index: 1000;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartA3 {
+    position: relative;
+    background-color: #2a2626;
+    width: 171.5px;
+    height: 17px;
+    transition: 0.3s;
+    left: 15.1px;
+  }
+  
+  .DecadeBarChart1_DetailA3 {
+    width: 171.5px;
+  }
+  
+  .A-Objet3 {
+    height: 17px;
+    background-color: #8d2438;
+  }
+  .A-Mobilier3 {
+    height: 0px;
+    background-color: #c6bca2;
+  }
+  .A-Industriel3 {
+    height: 0px;
+    background-color: #e7a02c;
+  }
+  .A-Vestimentaire3 {
+    height: 1px;
+    background-color: #1a4d8b;
+  }
+  .A-Graphique3 {
+    height: 0px;
+    background-color: #da3035;
+  }
+  .A-Technologie3 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .A-Architecture3 {
+    height: 0px;
+    background-color: #91a879;
+  }
+  
+  .ChartA3 {
+    color: #a9a19b;
+    position: relative;
+    top: 21px;
+    left: 116px;
+    cursor: cell;
+    z-index: 1000;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartA4 {
+    position: relative;
+    background-color: #2a2626;
+    width: 171.5px;
+    height: 28px;
+    transition: 0.3s;
+    left: -17px;
+  }
+  
+  .DecadeBarChart1_DetailA4 {
+    width: 171.5px;
+  }
+  
+  .A-Objet4 {
+    height: 28px;
+    background-color: #8d2438;
+  }
+  .A-Mobilier4 {
+    height: 11px;
+    background-color: #c6bca2;
+  }
+  .A-Industriel4 {
+    height: 0px;
+    background-color: #e7a02c;
+  }
+  .A-Vestimentaire4 {
+    height: 7px;
+    background-color: #1a4d8b;
+  }
+  .A-Graphique4 {
+    height: 0px;
+    background-color: #da3035;
+  }
+  .A-Technologie4 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .A-Architecture4 {
+    height: 0px;
+    background-color: #91a879;
+  }
+  
+  .ChartA4 {
+    color: #a9a19b;
+    position: relative;
+    top: 32px;
+    left: 88px;
+    cursor: cell;
+    z-index: 1000;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartA5 {
+    position: relative;
+    background-color: #2a2626;
+    width: 172px;
+    height: 6px;
+    transition: 0.3s;
+    left: -37px;
+  }
+  
+  .DecadeBarChart1_DetailA5 {
+    width: 171.5px;
+  }
+  
+  .A-Objet5 {
+    height: 6px;
+    background-color: #8d2438;
+  }
+  .A-Mobilier5 {
+    height: 1px;
+    background-color: #c6bca2;
+  }
+  .A-Industriel5 {
+    height: 0px;
+    background-color: #e7a02c;
+  }
+  .A-Vestimentaire5

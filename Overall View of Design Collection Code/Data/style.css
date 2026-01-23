@@ -47,20 +47,6 @@
   
   /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
   
-  .DecadeBarChartContainer [class^="DecadeBarChart1_Detail"],
-  .DecadeBarChartContainer2 [class^="DecadeBarChart1_Detail"] {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .DecadeBarChartContainer [class^="DecadeBarChart1_Detail"].active,
-  .DecadeBarChartContainer2 [class^="DecadeBarChart1_Detail"].active {
-    opacity: 1;
-  }
-  
-  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-  
   .DecadeBarChart1 {
     position: relative;
     background-color: #2a2626;
@@ -70,8 +56,15 @@
     left: -33px;
   }
   
+  .Chart1:hover ~ .DecadeBarChart1 .DecadeBarChart1_Detail1 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_Detail1 {
+    position: absolute;
     width: 189px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .Objet1 {
@@ -123,8 +116,15 @@
     left: -65px;
   }
   
+  .Chart2:hover ~ .DecadeBarChart2 .DecadeBarChart1_Detail2 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_Detail2 {
+    position: absolute;
     width: 171px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .Objet2 {
@@ -147,6 +147,14 @@
     height: 8px;
     background-color: #da3035;
   }
+  /* .Technologie2 {
+      height: 0px;
+      background-color: #83b7ca;
+    }
+    .Architecture2 {
+      height: 0px;
+      background-color: #91a879;
+    } */
   
   .Chart2 {
     color: #a9a19b;
@@ -167,8 +175,15 @@
     left: -106px;
   }
   
+  .Chart3:hover ~ .DecadeBarChart3 .DecadeBarChart1_Detail3 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_Detail3 {
+    position: absolute;
     width: 171.5px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .Objet3 {
@@ -219,8 +234,15 @@
     position: relative;
   }
   
+  .Chart4:hover ~ .DecadeBarChart4 .DecadeBarChart1_Detail4 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_Detail4 {
+    position: absolute;
     width: 171px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .Objet4 {
@@ -271,8 +293,15 @@
     position: relative;
   }
   
+  .Chart5:hover ~ .DecadeBarChart5 .DecadeBarChart1_Detail5 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_Detail5 {
+    position: absolute;
     width: 172px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .Objet5 {
@@ -323,8 +352,15 @@
     position: relative;
   }
   
+  .Chart6:hover ~ .DecadeBarChart6 .DecadeBarChart1_Detail6 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_Detail6 {
+    position: absolute;
     width: 172px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .Objet6 {
@@ -376,8 +412,15 @@
     position: relative;
   }
   
+  .Chart7:hover ~ .DecadeBarChart7 .DecadeBarChart1_Detail7 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_Detail7 {
+    position: absolute;
     width: 172px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .Objet7 {
@@ -428,8 +471,15 @@
     position: relative;
   }
   
+  .Chart8:hover ~ .DecadeBarChart8 .DecadeBarChart1_Detail8 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_Detail8 {
+    position: absolute;
     width: 171px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .Objet8 {
@@ -480,8 +530,15 @@
     position: relative;
   }
   
+  .Chart9:hover ~ .DecadeBarChart9 .DecadeBarChart1_Detail9 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_Detail9 {
+    position: absolute;
     width: 172px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .Objet9 {
@@ -532,8 +589,15 @@
     position: relative;
   }
   
+  .Chart10:hover ~ .DecadeBarChart10 .DecadeBarChart1_Detail10 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_Detail10 {
+    position: absolute;
     width: 171px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .Objet10 {
@@ -584,8 +648,15 @@
     position: relative;
   }
   
+  .Chart11:hover ~ .DecadeBarChart11 .DecadeBarChart1_Detail11 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_Detail11 {
+    position: absolute;
     width: 171px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .Objet11 {
@@ -636,8 +707,15 @@
     position: relative;
   }
   
+  .Chart12:hover ~ .DecadeBarChart12 .DecadeBarChart1_Detail12 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_Detail12 {
+    position: absolute;
     width: 170.5px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .Objet12 {
@@ -688,8 +766,15 @@
     position: relative;
   }
   
+  .Chart13:hover ~ .DecadeBarChart13 .DecadeBarChart1_Detail13 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_Detail13 {
+    position: absolute;
     width: 29px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .Objet13 {
@@ -778,8 +863,15 @@
     left: 69px;
   }
   
+  .ChartA1:hover + .DecadeBarChartA1 .DecadeBarChart1_DetailA1 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_DetailA1 {
+    position: absolute;
     width: 100px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .A-Objet1 {
@@ -831,8 +923,15 @@
     left: 41.8px;
   }
   
+  .ChartA2:hover + .DecadeBarChartA2 .DecadeBarChart1_DetailA2 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_DetailA2 {
+    position: absolute;
     width: 171px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .A-Objet2 {
@@ -884,8 +983,15 @@
     left: 15.1px;
   }
   
+  .ChartA3:hover + .DecadeBarChartA3 .DecadeBarChart1_DetailA3 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_DetailA3 {
+    position: absolute;
     width: 171.5px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .A-Objet3 {
@@ -937,8 +1043,15 @@
     left: -17px;
   }
   
+  .ChartA4:hover + .DecadeBarChartA4 .DecadeBarChart1_DetailA4 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_DetailA4 {
+    position: absolute;
     width: 171.5px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .A-Objet4 {
@@ -990,8 +1103,15 @@
     left: -37px;
   }
   
+  .ChartA5:hover + .DecadeBarChartA5 .DecadeBarChart1_DetailA5 {
+    opacity: 1;
+  }
+  
   .DecadeBarChart1_DetailA5 {
+    position: absolute;
     width: 171.5px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   
   .A-Objet5 {
@@ -1006,4 +1126,574 @@
     height: 0px;
     background-color: #e7a02c;
   }
-  .A-Vestimentaire5
+  .A-Vestimentaire5 {
+    height: 0px;
+    background-color: #1a4d8b;
+  }
+  .A-Graphique5 {
+    height: 0px;
+    background-color: #da3035;
+  }
+  .A-Technologie5 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .A-Architecture5 {
+    height: 0px;
+    background-color: #91a879;
+  }
+  
+  .ChartA5 {
+    color: #a9a19b;
+    position: relative;
+    left: 62px;
+    z-index: 1000;
+    cursor: cell;
+    top: 10px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartA6 {
+    background-color: #2a2626;
+    width: 172px;
+    height: 60px;
+    transition: 0.3s;
+    left: -72.5px;
+    position: relative;
+  }
+  
+  .ChartA6:hover + .DecadeBarChartA6 .DecadeBarChart1_DetailA6 {
+    opacity: 1;
+  }
+  
+  .DecadeBarChart1_DetailA6 {
+    position: absolute;
+    width: 171.5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .A-Objet6 {
+    height: 60px;
+    background-color: #8d2438;
+  }
+  .A-Mobilier6 {
+    height: 1px;
+    background-color: #c6bca2;
+  }
+  .A-Industriel6 {
+    height: 0px;
+    background-color: #e7a02c;
+  }
+  .A-Vestimentaire6 {
+    height: 1px;
+    background-color: #1a4d8b;
+  }
+  .A-Graphique6 {
+    height: 0px;
+    background-color: #da3035;
+  }
+  .A-Technologie6 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .A-Architecture6 {
+    height: 0px;
+    background-color: #91a879;
+  }
+  
+  .ChartA6 {
+    color: #a9a19b;
+    position: relative;
+    left: 38px;
+    z-index: 1000;
+    cursor: cell;
+    top: 63px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartA7 {
+    background-color: #2a2626;
+    width: 172px;
+    height: 32px;
+    transition: 0.3s;
+    left: -105.2px;
+    position: relative;
+  }
+  
+  .ChartA7:hover + .DecadeBarChartA7 .DecadeBarChart1_DetailA7 {
+    opacity: 1;
+  }
+  
+  .DecadeBarChart1_DetailA7 {
+    position: absolute;
+    width: 172px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .A-Objet7 {
+    height: 32px;
+    background-color: #8d2438;
+  }
+  .A-Mobilier7 {
+    height: 25px;
+    background-color: #c6bca2;
+  }
+  .A-Industriel7 {
+    height: 23px;
+    background-color: #e7a02c;
+  }
+  .A-Vestimentaire7 {
+    height: 19px;
+    background-color: #1a4d8b;
+  }
+  .A-Graphique7 {
+    height: 18px;
+    background-color: #da3035;
+  }
+  .A-Technologie7 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .A-Architecture7 {
+    height: 1px;
+    background-color: #91a879;
+  }
+  
+  .ChartA7 {
+    color: #a9a19b;
+    position: relative;
+    left: 2px;
+    z-index: 1000;
+    cursor: cell;
+    top: 36px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartA8 {
+    background-color: #2a2626;
+    width: 171px;
+    height: 102px;
+    transition: 0.3s;
+    left: -148.5px;
+    position: relative;
+  }
+  
+  .ChartA8:hover + .DecadeBarChartA8 .DecadeBarChart1_DetailA8 {
+    opacity: 1;
+  }
+  
+  .DecadeBarChart1_DetailA8 {
+    position: absolute;
+    width: 171px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .A-Objet8 {
+    height: 102px;
+    background-color: #8d2438;
+  }
+  .A-Mobilier8 {
+    height: 98px;
+    background-color: #c6bca2;
+  }
+  .A-Industriel8 {
+    height: 0px;
+    background-color: #e7a02c;
+  }
+  .A-Vestimentaire8 {
+    height: 0px;
+    background-color: #1a4d8b;
+  }
+  .A-Graphique8 {
+    height: 91px;
+    background-color: #da3035;
+  }
+  .A-Technologie8 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .A-Architecture8 {
+    height: 1px;
+    background-color: #91a879;
+  }
+  .ChartA8 {
+    color: #a9a19b;
+    position: relative;
+    left: -35px;
+    z-index: 1000;
+    cursor: cell;
+    top: 106px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartA9 {
+    background-color: #2a2626;
+    width: 172px;
+    height: 19px;
+    transition: 0.3s;
+    left: -175.5px;
+    position: relative;
+  }
+  
+  .ChartA9:hover + .DecadeBarChartA9 .DecadeBarChart1_DetailA9 {
+    opacity: 1;
+  }
+  
+  .DecadeBarChart1_DetailA9 {
+    position: absolute;
+    width: 172px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .A-Objet9 {
+    height: 19px;
+    background-color: #8d2438;
+  }
+  .A-Mobilier9 {
+    height: 15px;
+    background-color: #c6bca2;
+  }
+  .A-Industriel9 {
+    height: 0px;
+    background-color: #e7a02c;
+  }
+  .A-Vestimentaire9 {
+    height: 0px;
+    background-color: #1a4d8b;
+  }
+  .A-Graphique9 {
+    height: 8px;
+    background-color: #da3035;
+  }
+  .A-Technologie9 {
+    height: 0px;
+    background-color: #83b7ca;
+  }
+  .A-Architecture9 {
+    height: 0px;
+    background-color: #91a879;
+  }
+  
+  .ChartA9 {
+    color: #a9a19b;
+    position: relative;
+    left: -72px;
+    z-index: 1000;
+    cursor: cell;
+    top: 23px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartA10 {
+    background-color: #2a2626;
+    width: 171px;
+    height: 1842px;
+    transition: 0.3s;
+    left: -283.3px;
+    position: relative;
+  }
+  
+  .ChartA10:hover ~ .DecadeBarChartA10 .DecadeBarChart1_DetailA10,
+  .ChartA10Bis:hover ~ .DecadeBarChartA10 .DecadeBarChart1_DetailA10  {
+    opacity: 1;
+  }
+  
+  .DecadeBarChart1_DetailA10 {
+    position: absolute;
+    width: 172px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .A-Objet10 {
+    height: 1842px;
+    background-color: #8d2438;
+  }
+  .A-Mobilier10 {
+    height: 1539px;
+    background-color: #c6bca2;
+  }
+  .A-Industriel10 {
+    height: 1198px;
+    background-color: #e7a02c;
+  }
+  .A-Vestimentaire10 {
+    height: 839px;
+    background-color: #1a4d8b;
+  }
+  .A-Graphique10 {
+    height: 756px;
+    background-color: #da3035;
+  }
+  .A-Technologie10 {
+    height: 12px;
+    background-color: #83b7ca;
+  }
+  .A-Architecture10 {
+    height: 5px;
+    background-color: #91a879;
+  }
+  
+  .ChartA10 {
+    color: #a9a19b;
+    position: relative;
+    left: -115px;
+    z-index: 1000;
+    cursor: cell;
+    top: 1846px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartA11 {
+    background-color: #2a2626;
+    width: 171.2px;
+    height: 1803px;
+    transition: 0.3s;
+    left: -392.3px;
+    position: relative;
+  }
+  
+  .ChartA11:hover ~ .DecadeBarChartA11 .DecadeBarChart1_DetailA11,
+  .ChartA11Bis:hover ~ .DecadeBarChartA11 .DecadeBarChart1_DetailA11  {
+    opacity: 1;
+  }
+  
+  .DecadeBarChart1_DetailA11 {
+    position: absolute;
+    width: 171.2px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .A-Objet11 {
+    height: 1803px;
+    background-color: #8d2438;
+  }
+  .A-Mobilier11 {
+    height: 1426px;
+    background-color: #c6bca2;
+  }
+  .A-Industriel11 {
+    height: 972px;
+    background-color: #e7a02c;
+  }
+  .A-Vestimentaire11 {
+    height: 719px;
+    background-color: #1a4d8b;
+  }
+  .A-Graphique11 {
+    height: 689px;
+    background-color: #da3035;
+  }
+  .A-Technologie11 {
+    height: 21px;
+    background-color: #83b7ca;
+  }
+  .A-Architecture11 {
+    height: 13px;
+    background-color: #91a879;
+  }
+  
+  .ChartA11 {
+    color: #a9a19b;
+    position: relative;
+    left: -220px;
+    z-index: 1000;
+    cursor: cell;
+    top: 1807px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartA12 {
+    background-color: #2a2626;
+    margin-left: 1px;
+    width: 171px;
+    height: 3378px;
+    transition: 0.3s;
+    left: -504.2px;
+    position: relative;
+  }
+  
+  .ChartA12:hover ~ .DecadeBarChartA12 .DecadeBarChart1_DetailA12,
+  .ChartA12Bis:hover ~ .DecadeBarChartA12 .DecadeBarChart1_DetailA12  {
+    opacity: 1;
+  }
+  
+  .DecadeBarChart1_DetailA12 {
+    position: absolute;
+    width: 171px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .A-Objet12 {
+    height: 3378px;
+    background-color: #8d2438;
+  }
+  .A-Mobilier12 {
+    height: 3207px;
+    background-color: #c6bca2;
+  }
+  .A-Industriel12 {
+    height: 2914px;
+    background-color: #e7a02c;
+  }
+  .A-Vestimentaire12 {
+    height: 0px;
+    background-color: #1a4d8b;
+  }
+  .A-Graphique12 {
+    height: 2864px;
+    background-color: #da3035;
+  }
+  .A-Technologie12 {
+    height: 66px;
+    background-color: #83b7ca;
+  }
+  .A-Architecture12 {
+    height: 13px;
+    background-color: #91a879;
+  }
+  
+  .ChartA12 {
+    color: #a9a19b;
+    position: relative;
+    left: -327px;
+    z-index: 1000;
+    cursor: cell;
+    top: 3382px;
+  }
+  
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  
+  .DecadeBarChartA13 {
+    background-color: #2a2626;
+    width: 46px;
+    height: 207px;
+    transition: 0.3s;
+    left: -550.5px;
+    position: relative;
+  }
+  
+  .ChartA13:hover + .DecadeBarChartA13 .DecadeBarChart1_DetailA13 {
+    opacity: 1;
+  }
+  
+  .DecadeBarChart1_DetailA13 {
+    position: absolute;
+    width: 46px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .A-Objet13 {
+    height: 207px;
+    background-color: #8d2438;
+  }
+  .A-Mobilier13 {
+    height: 149px;
+    background-color: #c6bca2;
+  }
+  .A-Industriel13 {
+    height: 78px;
+    background-color: #e7a02c;
+  }
+  .A-Vestimentaire13 {
+    height: 70px;
+    background-color: #1a4d8b;
+  }
+  .A-Graphique13 {
+    height: 57px;
+    background-color: #da3035;
+  }
+  .A-Technologie13 {
+    height: 37px;
+    background-color: #83b7ca;
+  }
+  .A-Architecture13 {
+    height: 10px;
+    background-color: #91a879;
+  }
+  
+  .ChartA13 {
+    color: #a9a19b;
+    position: relative;
+    left: -499px;
+    z-index: 1000;
+    cursor: cell;
+    top: 211px;
+  }
+  
+  .DesignDetail {
+    position: relative;
+    top: 1500px;
+    left: 100px;
+  }
+  
+  .ChartA10Bis {
+    color: #a9a19b;
+    position: relative;
+    top: 292px;
+    left: -567px;
+    cursor: cell;
+    z-index: 1000;
+  }
+  
+  .ChartA11Bis {
+    color: #a9a19b;
+    position: relative;
+    top: 292px;
+    left: -782px;
+    cursor: cell;
+    z-index: 1000;
+  }
+  
+  .ChartA12Bis {
+    color: #a9a19b;
+    position: relative;
+    top: 292px;
+    left: -999px;
+    cursor: cell;
+    z-index: 1000;
+  }
+  
+  .underline{
+    position: relative;
+    border: solid 1px #c6bca2;
+    width: 330px;
+    top: 320px;
+    left: -1486px;
+  }
+  
+  .line1{
+    position: relative;
+    border: solid 1px #c6bca2;
+    height: 15px;
+    top: 304px;
+    left: -1757px;
+  }
+  
+  .line2{
+    position: relative;
+    border: solid 1px #c6bca2;
+    height: 15px;
+    top: 304px;
+    left: -1695px;
+  }
+  
+  .info_line{
+    top: 304px;
+    left: -1695px;
+    position: relative;
+  }

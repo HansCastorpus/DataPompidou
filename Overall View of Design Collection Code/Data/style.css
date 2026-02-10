@@ -166,22 +166,22 @@
 .Chart13:hover ~ .DecadeBarChart13 .DecadeBarChart1_Detail13 { opacity: 1; filter: grayscale(0);}
 
 /* Acquisition Charts Hover */
-.ChartA1:hover + .DecadeBarChartA1 .DecadeBarChart1_DetailA1 { opacity: 1; }
-.ChartA2:hover + .DecadeBarChartA2 .DecadeBarChart1_DetailA2 { opacity: 1; }
-.ChartA3:hover + .DecadeBarChartA3 .DecadeBarChart1_DetailA3 { opacity: 1; }
-.ChartA4:hover + .DecadeBarChartA4 .DecadeBarChart1_DetailA4 { opacity: 1; }
-.ChartA5:hover + .DecadeBarChartA5 .DecadeBarChart1_DetailA5 { opacity: 1; }
-.ChartA6:hover + .DecadeBarChartA6 .DecadeBarChart1_DetailA6 { opacity: 1; }
-.ChartA7:hover + .DecadeBarChartA7 .DecadeBarChart1_DetailA7 { opacity: 1; }
-.ChartA8:hover + .DecadeBarChartA8 .DecadeBarChart1_DetailA8 { opacity: 1; }
-.ChartA9:hover + .DecadeBarChartA9 .DecadeBarChart1_DetailA9 { opacity: 1; }
+.ChartA1:hover + .DecadeBarChartA1 .DecadeBarChart1_DetailA1 { opacity: 1; filter: grayscale(0);}
+.ChartA2:hover + .DecadeBarChartA2 .DecadeBarChart1_DetailA2 { opacity: 1; filter: grayscale(0);}
+.ChartA3:hover + .DecadeBarChartA3 .DecadeBarChart1_DetailA3 { opacity: 1; filter: grayscale(0);}
+.ChartA4:hover + .DecadeBarChartA4 .DecadeBarChart1_DetailA4 { opacity: 1; filter: grayscale(0);}
+.ChartA5:hover + .DecadeBarChartA5 .DecadeBarChart1_DetailA5 { opacity: 1; filter: grayscale(0);}
+.ChartA6:hover + .DecadeBarChartA6 .DecadeBarChart1_DetailA6 { opacity: 1; filter: grayscale(0);}
+.ChartA7:hover + .DecadeBarChartA7 .DecadeBarChart1_DetailA7 { opacity: 1; filter: grayscale(0);}
+.ChartA8:hover + .DecadeBarChartA8 .DecadeBarChart1_DetailA8 { opacity: 1; filter: grayscale(0);}
+.ChartA9:hover + .DecadeBarChartA9 .DecadeBarChart1_DetailA9 { opacity: 1; filter: grayscale(0);}
 .ChartA10:hover ~ .DecadeBarChartA10 .DecadeBarChart1_DetailA10,
-.ChartA10Bis:hover ~ .DecadeBarChartA10 .DecadeBarChart1_DetailA10 { opacity: 1; }
+.ChartA10Bis:hover ~ .DecadeBarChartA10 .DecadeBarChart1_DetailA10 { opacity: 1; filter: grayscale(0);}
 .ChartA11:hover ~ .DecadeBarChartA11 .DecadeBarChart1_DetailA11,
-.ChartA11Bis:hover ~ .DecadeBarChartA11 .DecadeBarChart1_DetailA11 { opacity: 1; }
+.ChartA11Bis:hover ~ .DecadeBarChartA11 .DecadeBarChart1_DetailA11 { opacity: 1; filter: grayscale(0);}
 .ChartA12:hover ~ .DecadeBarChartA12 .DecadeBarChart1_DetailA12,
-.ChartA12Bis:hover ~ .DecadeBarChartA12 .DecadeBarChart1_DetailA12 { opacity: 1; }
-.ChartA13:hover + .DecadeBarChartA13 .DecadeBarChart1_DetailA13 { opacity: 1; }
+.ChartA12Bis:hover ~ .DecadeBarChartA12 .DecadeBarChart1_DetailA12 { opacity: 1; filter: grayscale(0);}
+.ChartA13:hover + .DecadeBarChartA13 .DecadeBarChart1_DetailA13 { opacity: 1; filter: grayscale(0);}
 
 /* Shared Chart Label Styles */
 .Chart1, .Chart2, .Chart3, .Chart4, .Chart5, .Chart6, .Chart7, .Chart8, .Chart9, .Chart10, .Chart11, .Chart12, .Chart13,

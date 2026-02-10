@@ -52,25 +52,25 @@ d3.json("Data/data.json", function (data) {
   
     var group5 = svg.append("g").attr("transform", "translate(0, 400)");
   
-    var acquisitionColor = "#635c58";
+    var acquisitionColor = "#111f30";
   
     var acquisitionColorHighlight = "orange";
   
-    var creationColor = "#635c58";
+    var creationColor = "#111f30";
   
     var creationColorHighlight = "royalblue";
   
-    var font = "14";
+    var font = "12";
   
-    var lineColor = "#635c58";
+    var lineColor = "#ece3e3";
   
     var lineWidth = "0.1";
   
-    var strokeWidth = "1";
+    var strokeWidth = "2";
   
     var lineOpacity = "90";
   
-    var fontColor = "#a9a19b";
+    var fontColor = "#302d2b";
   
     var strokeColorCreation = "orange";
   
@@ -362,7 +362,7 @@ d3.json("Data/data.json", function (data) {
         return d.AcquisitionQuantity;
       })
       .attr("font-size", font - 2)
-      .attr("fill", fontColor)
+      .attr("fill", "fontColor")
       .attr("text-anchor", "middle")
       .style("font-family", "Josefin Sans, sans-serif")
       .style("display", "none");
